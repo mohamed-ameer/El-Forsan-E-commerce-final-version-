@@ -1,0 +1,82 @@
+.about_us_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.about_us_title h2{
+    position: relative;
+    color: #59763C;
+    font-weight: 600;
+    font-size: 40px;
+}
+.about_us_title h2::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 115%;
+    width:100%;
+    height: 2px;
+    background-color: #59763C;
+}
+
+.about_us_section1 .about_us_content{
+    border: 2px solid #59763C;
+    border-radius: 5px;
+    padding: 10px;
+}
+.about_us_section1 .about_us_content .about_us_content_title{
+    position: relative;
+    font-weight: 700;
+    color: #59763C;
+    padding-bottom: 10px;
+}
+.about_us_section1 .about_us_content .about_us_content_text p{
+    margin: 0 0 0 0;
+    padding: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.about_us_section2_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_us_section2_button a{
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.5;
+}
+.about_us_section2_button a:hover{
+    transform: scale(1.09);
+}
+.about_us_certificates{
+    max-width: 500px;
+    max-height: 500px;
+}
+@media (max-width:799px) {
+    .about_us_section1 .about_us_content p {
+        font-size: 20px;
+    }
+}
+@media (max-width:599px) {
+    .about_us_section1 .about_us_content p {
+        font-size: 17px;
+    }
+    .about_us_section1 .about_us_content ul{
+        margin: 10px;
+        padding: 0;
+        list-style: square;
+    }
+}
+@media (max-width:399px) {
+    .about_us_section1 .about_us_content p {
+        font-size: 13px;
+    }
+    .about_us_video iframe{
+        height: 350px;
+    }
+}
